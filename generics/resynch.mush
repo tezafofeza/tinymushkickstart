@@ -59,7 +59,7 @@
 #     and the first word in its name is a number.                 #
 #=================================================================#
 
-  @switch [or(hastype(%q0, player), 
+  @switch/now/first [or(hastype(%q0, player), 
                   hasflag(%q0, parent),
                   strmatch(first(name(%q0)), Unfinished))]
           [generic(%q0)]=
