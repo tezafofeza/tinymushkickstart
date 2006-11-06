@@ -105,7 +105,7 @@
   has-freehand/1 & can-carry/1
 -
 @succ #128 = 
-  You pick up the [goodname(%!)].[switch(get(%!/taking),%#,[set(%!,taking:)],[cemit(Wizards,%xh%rTwink Alert: [name(%#)] %# has bypassed the take code%, taking [name(%!)] %! using the __get command.%xn)])]
+  You pick up the [goodname(%!)].[switch(get(%!/taking),%#,[set(%!,taking:)],[cemit(Wizards,%xh%rTwink Alert: %xh%xw[name(%#)] %# %xh%xwhas bypassed the take code%, taking %xh%xw[name(%!)] %! %xh%xwusing the __get command.%xn)])]
 -
 # Lets doublecheck security. If none of the softcode moved the object, but the object moved, squeal.
 @move #128=[switch([not(strlen(
@@ -119,7 +119,7 @@
                    ))]
             ,1
 # No softcode has moved this object. Lets tell the wizzen.
-               ,[cemit(Wizards,%xh%xwWarning: [name(%!)] %! moved without softcode%, and is now at [name(loc(%!))] [loc(%!)]%xn)]
+               ,[cemit(Wizards,%xh%xwWarning: [name(%!)] %! %xh%xwmoved without softcode%, and is now at [name(loc(%!))] [loc(%!)]%xn)]
             ,
 # Softcode has moved this object, so lets clear all the possible verbs.
                 [set(%!,giving:)]
@@ -216,7 +216,7 @@
   is-carrying/1 & can-drop/1
 -
 @drop #128 = 
-  You drop the [goodname(%!)].
+  You drop the [goodname(%!)].[switch(get(%!/dropping),%#,[set(%!,dropping:)],[cemit(Wizards,%xh%rTwink Alert: [name(%#)] %# %xh%xwhas bypassed the drop code%, dropping [name(%!)] %! %xh%xwusing the __drop command.%xn)])]
 -
 @odrop #128 =
   drops the [goodname(%!)].
