@@ -564,7 +564,7 @@
     Level/Class,
     Clan,
     Vocation, 
-    App?, , Last Name)]
+    App?, , Family Name)]
   %xn
 -
 
@@ -1849,7 +1849,7 @@ think setq(2, filter(filter-female, %q0));
 
 &cmd-roster-topten #10 = $@roster/topten:
   @pemit %#=The Roster TOPTEN:%r%xhVotes%b
-   [mid([u(u-roster-line,Name,Sex,Age,Level,Clan,Vocation,A,,Lastname)],0,73)]
+   [mid([u(u-roster-line,Name,Sex,Age,Level,Clan,Vocation,A,,Family Name)],0,73)]
    %xn;
   @dolist [u(u-roster-topten)] = 
       @pemit %#=[rjust([u(u-roster-votes,##)],3)]%b%b%b
@@ -1863,7 +1863,7 @@ think setq(2, filter(filter-female, %q0));
                   [v(roster-list)])], 1, 10)]
 
 -
-&config-roster-vote-data #10 = #25122
+&config-roster-vote-data #10 = #378
 -
 
 &sortby-votes #10 = [sort(%0,n)]

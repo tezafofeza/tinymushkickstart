@@ -117,8 +117,9 @@
 
 @Aleave #101 = 
   @switch and(
-            eq(words(lcon(me)), 0), 
-            eq(words(lexits(me)), 
+            eq(words(lcon(me)), 0),
+            eq(hastag(num(me),dspace),1), 
+            eq(words(lexits(me)),
             words(lexits(parent(me))))
           ) = 1, {
     &num-[setr(0, [v(XCOOR)].[v(YCOOR)].[v(ZCOOR)])] %va = 
@@ -436,8 +437,7 @@
   &num-%3.%4.%5 %va = %q0; 
   &XCOOR %q0 = %3; 
   &YCOOR %q0 = %4; 
-  &ZCOOR %q0 = %5; 
-  @set %q0 = FLOATING; 
+  &ZCOOR %q0 = %5;  
   @set %q0 = WIZARD; 
   @power %q0 = builder; 
   @parent %q0 = ulocal(GETPARENT, %3, %4, %5);
@@ -604,8 +604,7 @@
 -
 
 @Amhear #103 = 
-  &RECYCLE_LIST me = v(RECYCLE_LIST) #%1;
-  @set #%1 = FLOATING
+  &RECYCLE_LIST me = v(RECYCLE_LIST) #%1
 -
 
 &X-LIMITS #103 = 2

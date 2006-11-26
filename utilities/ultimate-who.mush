@@ -468,10 +468,10 @@ w hh nnnnnnnnnnnn sss 3333 11111111111 2222222222222222222222 44444444 ccc iiii
 -
 &COLUMN-4 #134 = 
   switch(get(%0/social-status), 
-    1, outcast, 
+    1, Eta %(outcast%), 
     2, commoner, 
-    3, middle, 
-    4, noble, 
+    3, lower noble, 
+    4, high noble, 
     5, royal, 
        other
   )

@@ -16,7 +16,7 @@
 -
 @amove #9=@tel me=#2
 -
-@lock/useLock #9=IS-WIZARD-OR-ROYAL/1
+@lock/useLock #9=IS-WIZARD-OR-ROYAL/1|IS-IN-DSPACE/1
 -
 @set #9=wizard
 -
@@ -261,7 +261,7 @@
 #  commands, but they are all being retained, at present
 #
 
-&IS-IN-DSPACE #9=[neq(0, member(lparent(%L), #101))]
+&IS-IN-DSPACE #9=[hastag(%L,dspace)]
 -
 
 &IS-BUILDER #9=[haspower(%#, builder)]

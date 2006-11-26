@@ -1,19 +1,19 @@
 #######################################################
 # This is the @finger code for FiranMUX               #
-# The @finger code object is Finger Code Object                    #
+# The @finger code object is #381                    #
 #######################################################
   
 
-@Amove Finger Code Object = @tel me=#2
+@Amove #381 = @tel me=#2
 -
 
-@set Finger Code Object/Amove = no_command
+@set #381/Amove = no_command
 -
 
-&TAGS Finger Code Object = master_object
+&TAGS #381 = master_object
 -
 
-&FINGER Finger Code Object = $@finger *:
+&FINGER #381 = $@finger *:
  @pemit %#=
    [switch(%0,me,setq(0,%#),setq(0,pmatch(%0)))]
    [switch(%q0,#-1*, There is no such player.,
@@ -100,7 +100,7 @@
 # This version of @finger allows the player to skip over spammy quotes.
 #
 
-&FINGER/SHORT Finger Code Object = $@finger/short *:
+&FINGER/SHORT #381 = $@finger/short *:
    @pemit %#=
    [switch(%0,me,setq(0,%#),setq(0,pmatch(%0)))]
    [switch(%q0,#-1*, There is no such player.,
@@ -178,7 +178,7 @@
          See 'help @finger' for information on @finger.[space(26)]%xn%xr|%xn%r%xr`
 [repeat(-,76)]%xn%xr'%xn)]
 -
-&JFINGER Finger Code Object = $@finger:@pemit %#=It's '@finger <player name>'. For help read 'help @finger'.
+&JFINGER #381 = $@finger:@pemit %#=It's '@finger <player name>'. For help read 'help @finger'.
 -
 
 &CMD-QUOTE #7 =
@@ -191,16 +191,16 @@
                  [eval(escsafe(get(%#/quote)))]
 
 -
-@set Finger Code Object = WIZARD
+@set #381 = WIZARD
 -
 
-@set Finger Code Object  = ROYALTY
+@set #381  = ROYALTY
 -
 
-@set Finger Code Object = UNINSPECTED
+@set #381 = UNINSPECTED
 -
 
-@set Finger Code Object = IMMORTAL
+@set #381 = IMMORTAL
 -
 
-@set Finger Code Object = SAFE
+@set #381 = SAFE

@@ -62,7 +62,7 @@ enter Dynamic Room Parent
 
 @open West <W>;west;w
 @set West=DARK
-@parent West=Dynamic Exit Parent
+@parent West=#102
 @lock West=me&!me
 @link West=here
 &XNEW West=sub(get(%0/XCOOR),1)
