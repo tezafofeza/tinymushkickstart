@@ -513,7 +513,7 @@ spouse|children|relationships|help|help2|status|add|damage|social|art|all
 -
 &u-sheet-header #7=
 
-    %xh%xg[ucstr(ljust(@sheet for [name(%0)] [get(%0/lastname)] , 75))]%r
+    %xh%xg[ucstr(ljust(@sheet for [get(%0/lastname)] [name(%0)]  , 75))]%r
     %xh%xb[repeat(-,75)]
 -
 &cmd-sheet-family #7=$@sheet/family:@fo %#=@sheet/family %#
