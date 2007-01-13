@@ -10,9 +10,9 @@
 # Dynamic Room Parent (#101)
 #############################################################################
 
-#101
-@@ @create Dynamic Room Parent=10
-
+# 101
+@create Dynamic Room Parent=10
+-
 &ISBUILDER #101 = [isbuilder(%#)]
 -
 @lock/UseLock #101 = ISBUILDER/1
@@ -28,7 +28,7 @@
 -
 
 &REGISTRY #101 = Dynamic-Room-Parent
---
+-
 @VA #101 = #103
 -
 &DYNAMIC-ARRAY-OBJECT #101 = #103
@@ -75,7 +75,7 @@
   }
 -
 
-@@ @Adesc #101 = 
+@Adesc #101 = 
   @pemit %# = [switch(hasflag(%#, TERSE), 0, 
     [setq(1, setunion(v(DARK_EXITS), u(DE_HIDE_BORDER), |))]
     [setq(0, filter(DE_FILTER, lexits(%!)))]
@@ -203,7 +203,7 @@
 #############################################################################
 
 #102
-@@ @create Dynamic Exit Parent = 10
+@create Dynamic Exit Parent = 10
 -
 
 @set #102 = WIZARD
@@ -582,7 +582,7 @@
 # Dynamic Array Object (#103)
 #############################################################################
 
-@@ @create Dynamic Array Object = 10
+@create Dynamic Array Object = 10
 -
 
 @set #103 = WIZARD
