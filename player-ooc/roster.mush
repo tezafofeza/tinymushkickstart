@@ -594,7 +594,7 @@
 -
 
 &u-class #10=
- [switch(%0, 1, outcast, 2, commoner, 3, middle, 4, noble, 5, ruler)]
+ [switch(%0, 1, Eta, 2, commoner, 3, Lower Noble, 4, High Noble, 5, Royal)]
 -
 
 
