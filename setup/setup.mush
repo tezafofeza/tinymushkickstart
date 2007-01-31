@@ -12,8 +12,8 @@
 -
 
 
-#2
-@@ @dig/tel Master Room
+
+@dig/tel Master Room
 -
 @desc #2 = %r%r
 -
@@ -21,8 +21,9 @@
 
 # make low dbref objects 3-99
 #
-@@ @dolist lnum(97) = {
+@dolist lnum(97) = {
   @create DB [add(3, ##)]
+}
 -
 
 
