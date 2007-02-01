@@ -580,7 +580,7 @@ think [setq(0, locate(%#, %0, switch(hasflag(%#,wizard), 1, anTX, nTX)))]
   [setq(4, ifelse(gte(%q2, %q3), %q2, %q3))]
   [pemit(%2, Grouped [name(%0)] with [name(%1)]!)]
   [set(%0, extracted_at:%q4)]
-  [safetel(%1, #2951)]
+  [safetel(%1, #307)]
   [ac_transfer(%q1, %q0, %1, %0)]
   [settag(%0, group)]
   [iter(setdiff(lcstr(laccounts(%1)), %q1), 
@@ -679,7 +679,7 @@ think [setq(0, locate(%#, %0, switch(hasflag(%#,wizard), 1, anTX, nTX)))]
 # Create the new separated object
                [setq(2, create(%0 %q0, 10))]
 # parent the new separated object to the original parent
-               [setparent(%q2, parent(%1))]
+               [trigger(#50/setparent,%q2, parent(%1))]
 # Create an account on the new object
                [ac_create(%q2, %q0, %0)]
 # Subtract that account from the original group object
