@@ -113,9 +113,9 @@
 # complexbox()
 
 &function-complexbox #50=
-[format([%4][repeat(%3,sub(%1,2))][%4],%1,[repeat(%b,%2)],)]%r
-[format(%0,[sub(%1,add(2,add(%5,%6)))],[repeat(%b,%2)]%3[repeat(%b,%5)],
-[repeat(%b,%6)]%3)]%r[format(%4[repeat(%3,sub(%1,2))]%4,%1,[repeat(%b,%2)],)]
+[border([%4][repeat(%3,sub(%1,2))][%4],%1,[repeat(%b,%2)],)]%r
+[border(%0,[sub(%1,add(2,add(%5,%6)))],[repeat(%b,%2)]%3[repeat(%b,%5)],
+[repeat(%b,%6)]%3)]%r[border(%4[repeat(%3,sub(%1,2))]%4,%1,[repeat(%b,%2)],)]
 
 -
 # clothingdesc()
