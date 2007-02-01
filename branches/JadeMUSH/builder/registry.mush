@@ -269,7 +269,7 @@
   @switch %0 = tags, {
     @@ The tag list is set by the @daily @@; 
     @pemit %# = All tags on registered objects:; 
-    @pemit %# = format(sort(u(u-all-tags)), 55, space(10), ); 
+    @pemit %# = border(sort(u(u-all-tags)), 55, space(10), ); 
     @pemit %# = --
   }, {
     @pemit %# = [mudname()] Registry -- Sorted by %0 Tag:%r; 
