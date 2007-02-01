@@ -266,7 +266,7 @@
 #
 
 &cmd-relationship-player #7=$@relationship *:
-  @switch [setr(9,[not(strmatch(%0,*/*))]
+  @switch/first [setr(9,[not(strmatch(%0,*/*))]
                   [t(setr(0,u(u-get-relationship-type,%#,%0)))]
           )]=
           0?, {@@ This is not the right form of the command.},
@@ -276,7 +276,7 @@
                \(%q0[ifelse(t(match(get(%#/aligned_with),%0)),\,aligned,)]
                     [ifelse(t(match(get(%#/sponsor_of),%0)),\,sponsoree,)]
                     [ifelse(t(match(get(%#/sponsored_by),%0)),\,sponsor,)]\):%r
-               [format([u(u-get-relationship-data,%#,%0)],70,%b%b%b%b%b,)]},
+               [border([u(u-get-relationship-data,%#,%0)],70,%b%b%b%b%b,)]},
               {@bb/post 7/Bug Report=cmd-relationship-player on #7 setq9
                                      returned %q9.;@pemit %#=Bug reported!}
 -
@@ -289,7 +289,7 @@
   [get(%0/[ifelse(isnum(setr(2,u(u-get-relkey,%0,%1))),
                  relationship-other%q2,relationship-%q2)])]
   [setq(3,get(%0/[ifelse(isnum(%q2),relationship-secret-other%q2,
-                 relationship-secret-%q2))])]
+                 relationship-secret-%q2)]))]
   [ifelse(t(words(%q3)),%rSecret Relationship:%b%xh%xr%q3%xn,%r)]
 
 
