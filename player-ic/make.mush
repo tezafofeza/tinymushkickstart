@@ -294,7 +294,7 @@
          >0, {@pemit %1=%xm%xhYou succeeded!%xn;
               @tr me/trig-make-success=%0, %1, %2, %3 },
              {@pemit %1=%xm%xhError: Admin have been alerted.%xn;
-              @qmail steph/Bug Report 'make'=Successes is 
+              @qmail waylon/Bug Report 'make'=Successes is 
                      returning the following: %q4, %%q5 = %q5 }
 -
 # triggered by trig-make-roll, where
@@ -647,7 +647,7 @@
 
   @switch [hastag(%0, customize)]=
       1, {@name %q2=Unfinished [name(%q2)]},
-      0, {@@ do nothing @@};
+      0, {@@ do nothing @@}; 
   @tr %0/trig-bonus-make = %1, %q2;
   @teleport %q2=[loc(%1)];
   @tr %0/trig-final-make = %1, %q2;
