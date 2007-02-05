@@ -371,7 +371,7 @@
 # Allows players to store patterns that they can reproduce, and to   #
 # name and describe new objects according to those patterns.         #
 #                                                                    #
-# Where the bin of patterns is #2580                                 #
+# Where the bin of patterns is #444                                 #
 ######################################################################
 # %q0 = dbref of object to serve as the pattern
 # %q1 = pattern name
@@ -426,7 +426,7 @@
                   @parent %q8=[parent(%q0)];
                   &num-patterns %#=[inc(default(%#/num-patterns, 0))];
                   &pat_[makeattr(%q1)] %#=%q8;
-                  @tel %q8 = #2580;
+                  @tel %q8 = #444;
                   @pemit %#=Created Pattern Named: %q1 },
 
 # default
