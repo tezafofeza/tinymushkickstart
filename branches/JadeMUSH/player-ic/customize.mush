@@ -395,7 +395,7 @@
                 [hastag(%q0, customize)]
                 [and(hastag(%q0, finished), 
                      not(match(unfinished, first(name(%q0)))))]
-                [lte(get(%#/num-patterns), mul(attribute(%#,memory), 4))]
+                [or([lte(get(%#/num-patterns), mul(attribute(%#,intelligence), 4))],not(hasflag(%#,wizard)))]
                 [lt(strlen(%q1), 30)] );
 
   @switch/first %q9=
