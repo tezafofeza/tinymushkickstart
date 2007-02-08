@@ -524,6 +524,13 @@
         v(PARENT-LOW-AIR), 
       u(U-Z-IS-HIGH-AIR, %2), 
         v(PARENT-HIGH-AIR), 
+      and(
+          lte(%0,3),
+          gte(%0,-3),
+          lte(%1,3),
+          gte(%1,-3)
+         ),
+        v(imperialcity),
       v(ROOM_PARENT)
     )
   )]
@@ -572,7 +579,7 @@
   default(%va/DISTRICT-%0.%1.%2, u(default-district, %0, %1, %2))
 -
 
-&DEFAULT-TAGS #102 = outside
+&DEFAULT-TAGS #102 = dspace outside
 -
 
 &DEFAULT-DISTRICT #102 = Wilderness
