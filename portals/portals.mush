@@ -349,12 +349,12 @@
 
     @switch [islocked(%q1)] =
        0, {
-              @pemit %#=%cr%chpass: the door is already unlocked, 
-                        so you leave it unlocked.%cn
+              @pemit %#=%xr%xhpass: the door is already unlocked, 
+                        so you leave it unlocked.%xn
           },
        1, {
-              @pemit %#=%ccpass: you unlock the door and relock 
-                        it behind you.%cn
+              @pemit %#=%xcpass: you unlock the door and relock 
+                        it behind you.%xn
           };
 
 #   do the stuff on the starting side of the exit
