@@ -177,7 +177,7 @@ duplicated in /transfer and /destroy.
 # error
   {
     @pemit %# = Tell a wizard that @account/destroy is broken.; 
-    @mail/quick Adam/BUG: #6/prog-destroy-account = 
+    @mail/quick genjimoto/BUG: #6/prog-destroy-account = 
       Error condition: '%q2'; 
     @notify v(semaphore-bank)
   }
@@ -285,7 +285,7 @@ duplicated in /transfer and /destroy.
 
 #error
   {
-    @mail/quick Steph/BUG: #6/cmd-account/parent = 
+    @mail/quick genjimoto/BUG: #6/cmd-account/parent = 
       @account/parent is producing an unexpected condition: '%q9'
   }
 -
